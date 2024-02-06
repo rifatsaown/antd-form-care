@@ -14,14 +14,14 @@ const CarePlanForm = () => {
               <Form.Item
                 label="Client"
                 name="client"
-                className="w-2/3 font-bold"
+                className="lg:w-2/3 font-bold"
               >
                 <Input />
               </Form.Item>
               <Form.Item
                 label="Client ID"
                 name="clientId"
-                className="w-2/3 font-bold"
+                className="lg:w-2/3 font-bold"
               >
                 <Input />
               </Form.Item>
@@ -46,14 +46,14 @@ const CarePlanForm = () => {
                   <Input
                     className="w-1/3"
                     placeholder="Enter Days"
-                    name="visitDays"
+                    name="supervisoryVisits"
                   />
                 </Radio.Group>
               </Form.Item>
               <Form.Item
                 label="Patient Problem"
                 name="patientProblem"
-                className="mr-10 font-bold"
+                className="lg:mr-10 font-bold"
               >
                 <TextArea rows={6} placeholder="Enter Patient Problem" />
               </Form.Item>
@@ -211,7 +211,7 @@ const CarePlanForm = () => {
                   label="Amputee (Specify)"
                   name="upAsTolerated"
                 >
-                  <TextArea rows={6} className="w-3/4" />
+                  <TextArea rows={6} className="lg:w-3/4" />
                 </Form.Item>
                 <Form.Item
                   className="font-bold"
@@ -262,7 +262,7 @@ const CarePlanForm = () => {
                   label="Special equipment"
                   name="specialEquipment"
                 >
-                  <Input className="w-2/3" />
+                  <Input className="lg:w-2/3" />
                 </Form.Item>
                 <Form.Item
                   className="font-bold mt-4"
@@ -324,7 +324,7 @@ const CarePlanForm = () => {
                     label="Other"
                     name="fallPrecautions"
                   >
-                    <Input className="w-2/4" />
+                    <Input className="lg:w-2/4" />
                   </Form.Item>
                 </Form.Item>
                 <Form.Item
@@ -476,14 +476,14 @@ const CarePlanForm = () => {
                   label="Prosthesis (Specify)"
                   name="bowelIssues"
                 >
-                  <TextArea className="w-2/3" />
+                  <TextArea className="lg:w-2/3" />
                 </Form.Item>
                 <Form.Item
                   className="font-bold mt-4"
                   label="Allergies (Specify)"
                   name="allergies"
                 >
-                  <TextArea className="w-2/3" />
+                  <TextArea className="lg:w-2/3" />
                 </Form.Item>
                 <Form.Item
                   className="font-bold mt-4"
@@ -517,7 +517,7 @@ const CarePlanForm = () => {
                     label="Diet"
                     name="diet"
                   >
-                    <TextArea className="w-2/3" />
+                    <TextArea className="lg:w-2/3" />
                   </Form.Item>
                 </Form.Item>
                 <Form.Item
@@ -555,7 +555,7 @@ const CarePlanForm = () => {
                   label="Pressure and Precations"
                   name="pressurePrecations"
                 >
-                  <TextArea rows={7} className="w-3/4" />
+                  <TextArea rows={7} className="lg:w-3/4" />
                 </Form.Item>
                 <Form.Item
                   className="font-bold mt-4"
@@ -604,9 +604,8 @@ const CarePlanForm = () => {
                   label="Other (Specify)"
                   name="other"
                 >
-                  <TextArea rows={10} className="w-3/4" />
+                  <TextArea rows={10} className="lg:w-3/4" />
                 </Form.Item>
-
               </div>
             </div>
           </section>
