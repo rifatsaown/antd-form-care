@@ -192,26 +192,26 @@ const CarePlanForm = () => {
                     </Radio.Button>
                   </Radio.Group>
                   <Form.Item
-                  className="font-bold"
-                  label="Up as Tolerated"
-                  name="upAsTolerated"
-                >
-                  <Radio.Group>
-                    <Radio.Button className="font-medium" value="yes">
-                      Yes
-                    </Radio.Button>
-                    <Radio.Button className="font-medium" value="no">
-                      No
-                    </Radio.Button>
-                  </Radio.Group>
-                </Form.Item>
+                    className="font-bold"
+                    label="Up as Tolerated"
+                    name="upAsTolerated"
+                  >
+                    <Radio.Group>
+                      <Radio.Button className="font-medium" value="yes">
+                        Yes
+                      </Radio.Button>
+                      <Radio.Button className="font-medium" value="no">
+                        No
+                      </Radio.Button>
+                    </Radio.Group>
+                  </Form.Item>
                 </Form.Item>
                 <Form.Item
                   className="font-bold"
                   label="Amputee (Specify)"
                   name="upAsTolerated"
                 >
-                  <Input className="w-2/3" />
+                  <TextArea rows={6} className="w-3/4" />
                 </Form.Item>
                 <Form.Item
                   className="font-bold"
@@ -292,9 +292,45 @@ const CarePlanForm = () => {
                     </Radio.Button>
                   </Radio.Group>
                   <Form.Item
+                    className="font-bold mt-4"
+                    label="Glassess"
+                    name="glassess"
+                  >
+                    <Radio.Group>
+                      <Radio.Button className="font-medium" value="yes">
+                        Yes
+                      </Radio.Button>
+                      <Radio.Button className="font-medium" value="no">
+                        No
+                      </Radio.Button>
+                    </Radio.Group>
+                  </Form.Item>
+                  <Form.Item
+                    className="font-bold mt-4"
+                    label="Contacts"
+                    name="contacts"
+                  >
+                    <Radio.Group>
+                      <Radio.Button className="font-medium" value="yes">
+                        Yes
+                      </Radio.Button>
+                      <Radio.Button className="font-medium" value="no">
+                        No
+                      </Radio.Button>
+                    </Radio.Group>
+                  </Form.Item>
+                  <Form.Item
+                    className="font-bold mt-4"
+                    label="Other"
+                    name="fallPrecautions"
+                  >
+                    <Input className="w-2/4" />
+                  </Form.Item>
+                </Form.Item>
+                <Form.Item
                   className="font-bold mt-4"
-                  label="Glassess"
-                  name="glassess"
+                  label="Hearing deficit"
+                  name="hearingDeficit"
                 >
                   <Radio.Group>
                     <Radio.Button className="font-medium" value="yes">
@@ -304,11 +340,25 @@ const CarePlanForm = () => {
                       No
                     </Radio.Button>
                   </Radio.Group>
+                  <Form.Item
+                    className="font-bold mt-4"
+                    label="Hearing Aid"
+                    name="hearingAid"
+                  >
+                    <Radio.Group>
+                      <Radio.Button className="font-medium" value="yes">
+                        Yes
+                      </Radio.Button>
+                      <Radio.Button className="font-medium" value="no">
+                        No
+                      </Radio.Button>
+                    </Radio.Group>
+                  </Form.Item>
                 </Form.Item>
                 <Form.Item
                   className="font-bold mt-4"
-                  label="Contacts"
-                  name="contacts"
+                  label="Dentures"
+                  name="dentures"
                 >
                   <Radio.Group>
                     <Radio.Button className="font-medium" value="yes">
@@ -318,18 +368,246 @@ const CarePlanForm = () => {
                       No
                     </Radio.Button>
                   </Radio.Group>
-                </Form.Item>
-                <Form.Item
-                  className="font-bold mt-4"
-                  label="Other"
-                  name="fallPrecautions"
-                >
-                  <Input className="w-2/4" />
-                </Form.Item>
+                  <Form.Item
+                    className="font-bold mt-4"
+                    label="Upper"
+                    name="upper"
+                  >
+                    <Radio.Group>
+                      <Radio.Button className="font-medium" value="yes">
+                        Yes
+                      </Radio.Button>
+                      <Radio.Button className="font-medium" value="no">
+                        No
+                      </Radio.Button>
+                    </Radio.Group>
+                  </Form.Item>
+                  <Form.Item
+                    className="font-bold mt-4"
+                    label="Lower"
+                    name="lower"
+                  >
+                    <Radio.Group>
+                      <Radio.Button className="font-medium" value="yes">
+                        Yes
+                      </Radio.Button>
+                      <Radio.Button className="font-medium" value="no">
+                        No
+                      </Radio.Button>
+                    </Radio.Group>
+                  </Form.Item>
+                  <Form.Item
+                    className="font-bold mt-4"
+                    label="Partial"
+                    name="partial"
+                  >
+                    <Radio.Group>
+                      <Radio.Button className="font-medium" value="yes">
+                        Yes
+                      </Radio.Button>
+                      <Radio.Button className="font-medium" value="no">
+                        No
+                      </Radio.Button>
+                    </Radio.Group>
+                  </Form.Item>
                 </Form.Item>
               </div>
-              <div className="p-3 border-2 border-black rounded-xl">3</div>
-              <div className="p-3 border-2 border-black rounded-xl">4</div>
+              <div className="p-3 border-2 border-black rounded-xl">
+                <Form.Item
+                  className="font-bold mt-4"
+                  label="Oriented x 3"
+                  name="oxygen"
+                >
+                  <Radio.Group>
+                    <Radio.Button className="font-medium" value="yes">
+                      Yes
+                    </Radio.Button>
+                    <Radio.Button className="font-medium" value="no">
+                      No
+                    </Radio.Button>
+                  </Radio.Group>
+                  <Form.Item>
+                    <Form.Item
+                      className="font-bold mt-4"
+                      label="Alert"
+                      name="alert"
+                    >
+                      <Radio.Group>
+                        <Radio.Button className="font-medium" value="yes">
+                          Yes
+                        </Radio.Button>
+                        <Radio.Button className="font-medium" value="no">
+                          No
+                        </Radio.Button>
+                      </Radio.Group>
+                    </Form.Item>
+                    <Form.Item
+                      className="font-bold mt-4"
+                      label="Forgetful/Confused"
+                      name="forgetfulConfused"
+                    >
+                      <Radio.Group>
+                        <Radio.Button className="font-medium" value="yes">
+                          Yes
+                        </Radio.Button>
+                        <Radio.Button className="font-medium" value="no">
+                          No
+                        </Radio.Button>
+                      </Radio.Group>
+                    </Form.Item>
+                  </Form.Item>
+                </Form.Item>
+                <Form.Item
+                  className="font-bold mt-4"
+                  label="Urinary issues"
+                  name="urinaryIssues"
+                >
+                  <Radio.Group>
+                    <Radio.Button className="font-medium" value="yes">
+                      Yes
+                    </Radio.Button>
+                    <Radio.Button className="font-medium" value="no">
+                      No
+                    </Radio.Button>
+                  </Radio.Group>
+                </Form.Item>
+                <Form.Item
+                  className="font-bold mt-4"
+                  label="Prosthesis (Specify)"
+                  name="bowelIssues"
+                >
+                  <TextArea className="w-2/3" />
+                </Form.Item>
+                <Form.Item
+                  className="font-bold mt-4"
+                  label="Allergies (Specify)"
+                  name="allergies"
+                >
+                  <TextArea className="w-2/3" />
+                </Form.Item>
+                <Form.Item
+                  className="font-bold mt-4"
+                  label="Diabetic"
+                  name="diabetic"
+                >
+                  <Radio.Group>
+                    <Radio.Button className="font-medium" value="yes">
+                      Yes
+                    </Radio.Button>
+                    <Radio.Button className="font-medium" value="no">
+                      No
+                    </Radio.Button>
+                  </Radio.Group>
+                  <Form.Item
+                    className="font-bold mt-4"
+                    label="Do not cut nails"
+                    name="doNotCutNails"
+                  >
+                    <Radio.Group>
+                      <Radio.Button className="font-medium" value="yes">
+                        Yes
+                      </Radio.Button>
+                      <Radio.Button className="font-medium" value="no">
+                        No
+                      </Radio.Button>
+                    </Radio.Group>
+                  </Form.Item>
+                  <Form.Item
+                    className="font-bold mt-4"
+                    label="Diet"
+                    name="diet"
+                  >
+                    <TextArea className="w-2/3" />
+                  </Form.Item>
+                </Form.Item>
+                <Form.Item
+                  className="font-bold mt-4"
+                  label="Seizure precautions"
+                  name="bowelIssues"
+                >
+                  <Radio.Group>
+                    <Radio.Button className="font-medium" value="yes">
+                      Yes
+                    </Radio.Button>
+                    <Radio.Button className="font-medium" value="no">
+                      No
+                    </Radio.Button>
+                  </Radio.Group>
+                </Form.Item>
+              </div>
+              <div className="p-3 border-2 border-black rounded-xl">
+                <Form.Item
+                  className="font-bold mt-4"
+                  label="Pressure and Precations"
+                  name="pressurePrecations"
+                >
+                  <Radio.Group>
+                    <Radio.Button className="font-medium" value="yes">
+                      Yes
+                    </Radio.Button>
+                    <Radio.Button className="font-medium" value="no">
+                      No
+                    </Radio.Button>
+                  </Radio.Group>
+                </Form.Item>
+                <Form.Item
+                  className="font-bold mt-4"
+                  label="Pressure and Precations"
+                  name="pressurePrecations"
+                >
+                  <TextArea rows={7} className="w-3/4" />
+                </Form.Item>
+                <Form.Item
+                  className="font-bold mt-4"
+                  label="Bleeeding Precautions"
+                  name="bleedingPrecautions"
+                >
+                  <Radio.Group>
+                    <Radio.Button className="font-medium" value="yes">
+                      Yes
+                    </Radio.Button>
+                    <Radio.Button className="font-medium" value="no">
+                      No
+                    </Radio.Button>
+                  </Radio.Group>
+                </Form.Item>
+                <Form.Item
+                  className="font-bold mt-4"
+                  label="Watch for"
+                  name="watchFor"
+                >
+                  <Radio.Group>
+                    <Radio.Button className="font-medium" value="hyper">
+                      Hyper
+                    </Radio.Button>
+                    <Radio.Button className="font-medium" value="hypoglyoerria">
+                      Hypoglyoerria
+                    </Radio.Button>
+                  </Radio.Group>
+                </Form.Item>
+                <Form.Item
+                  className="font-bold mt-4"
+                  label="Prone to Fractures"
+                  name="proneToFractures"
+                >
+                  <Radio.Group>
+                    <Radio.Button className="font-medium" value="yes">
+                      Yes
+                    </Radio.Button>
+                    <Radio.Button className="font-medium" value="no">
+                      No
+                    </Radio.Button>
+                  </Radio.Group>
+                </Form.Item>
+                <Form.Item
+                  className="font-bold mt-4"
+                  label="Other (Specify)"
+                  name="other"
+                >
+                  <TextArea rows={10} className="w-3/4" />
+                </Form.Item>
+
+              </div>
             </div>
           </section>
         </Form>
